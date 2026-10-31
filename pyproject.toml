@@ -1,0 +1,21 @@
+[project]
+name = "nonebot-plugin-iinfo"
+version = "0.2.0"
+description = "发送 iinfo，返回当前会话所有可获取的信息（精简/标识符/消息结构/API 探测/完整多模式，支持 QQ 官方 Bot）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "zlqd123" }]
+keywords = ["nonebot", "nonebot2", "debug", "session", "qq-bot"]
+dependencies = ["nonebot2>=2.3.0"]
+
+[project.urls]
+homepage = "https://github.com/zlqd123/nonebot-plugin-iinfo"
+repository = "https://github.com/zlqd123/nonebot-plugin-iinfo"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nonebot_plugin_iinfo"]
